@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/DC_fp.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body class="kontakti_1_2">
+    <div id="form-div">
+        <!--Форма с input полета, при изпращането им се извиква прозорец с текст "DONE" със закъснение от 1сек.-->
+        <form action="javascript:window.setTimeout(function(){alert('DONE!')},1000);">
+            <h2>Контактна форма запитване за парти</h2>
+            <p>
+                <input type="text" id="date_party" class="feedback-input" placeholder="Дата на партито*" tabindex="1">
+            </p>
+            <p>
+                <input type="text" id="povod" class="feedback-input" placeholder="Повод на партито*" tabindex="2">
+            </p>
+            <p>
+                <input type="text" id="name" class="feedback-input" placeholder="Имена на празнуващия*" tabindex="3">
+            </p>
+            <p>
+                <input type="number" id="number_childrens" class="feedback-input" placeholder="Брой деца*" min="1" max="30" tabindex="4">
+            </p>
+            <p>
+                <input type="text" id="name_parents" class="feedback-input" placeholder="Имена на поръчителя*" tabindex="5">
+            </p>
+            <p>
+                <input type="number" id="number_parents" class="feedback-input" placeholder="Брой възрастни" min="0" max="30" tabindex="6">
+            </p>
+
+            <p>
+                <input type="email" id="email" class="feedback-input" placeholder="Email" tabindex="7">
+            </p>
+            <p>
+                <input type="tel" id="phone" class="feedback-input" placeholder="Телефон*" tabindex="8">
+            </p>
+            <p>
+                <textarea id="comment" class="feedback-input" placeholder="Друга важна информация" tabindex="9"></textarea>
+            </p>
+            <div>
+                <input type="submit" value="SEND" id="button-send">
+            </div>
+        </form>
+    </div>
+    <!--В дясно на формата - Div съдържащ снимка и контактна информация-->
+    <div class="adres_info">
+        <h2>Контактна форма запитване за парти</h2>
+        <img src="../Image/Image_kontakti/adres_info.jpg">
+        <p>Детски център "Парти!"<br>Адрес: гр. София, п.к. 1700,<br>ул. Проф. Станчо Ваклинов 6 <br>Работно време: от 10:00 до 22:00ч<br>Телефон: 0988 882331;<br>02/88 77 800<br> E-mail: info@partycenter.bg
+        </p>
+    </div>
+    <script src="../Script/jquery-3.2.1.min.js" type="application/javascript"></script>
+    <script src="../Script/DC_fp.js" type="application/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/DC_fp.css">
+    <link rel="stylesheet" type="text/css" href="CSS/new_buttons_menu.css">
+    <title>Детски център "Парти!"</title>
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--Лого-->
+        <div class="header">
+            <img src="Image/kids-party-300x174.png" class="logo">
+        </div>
+    </header>
+    <!--Меню бутони зареждащи в iframe html-и чрез JS-->
+    <div class="buttons-menu">
+        <button id="nachalo">Начало</button>
+        <button id="igri">Игри</button>
+        <button id="parti">Партита и Рожденни дни</button>
+        <button id="novini">Новини</button>
+        <button id="qa">Често задавани въпроси</button>
+        <button id="kontakti">Контакти</button>
+
+    </div>
+
+    <main>
+        <!--Iframe зареждащ Html-ите от проект директорията чрез бутоните-->
+        <iframe src="HTMLs/DC_fp_NACHALO.html"></iframe>
+    </main>
+    <script src="Script/jquery-3.2.1.min.js" type="application/javascript"></script>
+    <script src="Script/DC_fp.js" type="application/javascript"></script>
+    <footer>
+        <br><br>
+        <p>&#169; 2017 Миглена Емилова Григорова. Всички права запазени.</p>
+    </footer>
+</body>

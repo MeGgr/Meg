@@ -1,0 +1,88 @@
+/*Div съдържащ бутоните*/
+
+.buttons-menu {
+    text-align: center;
+    position: relative;
+    margin: auto auto 0px auto;
+    width: auto;
+    background-color: bisque;
+    border-width: 1px 1px 1px 1px;
+    border-style: double;
+    border-color: chartreuse;
+    border-radius: 5px;
+}
+
+
+/*Бутони в нормално състояние*/
+
+button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 8px 4.03%;
+    margin: 0 5px;
+    text-shadow: 2px 2px 1px #595959;
+    border-radius: 50px;
+    border: solid 1px #004F72;
+    background: -moz-linear-gradient(top, rgb(133, 194, 231) 0%, #3498db 100%);
+    background: -webkit-linear-gradient(top, rgb(133, 194, 231) 0%, #3498db 100%);
+    background: -o-linear-gradient(top, rgb(133, 194, 231) 0%, #3498db 100%);
+    background: -ms-linear-gradient(top, rgb(133, 194, 231) 0%, #3498db 100%);
+    background: linear-gradient(top, rgb(133, 194, 231) 0%, #3498db 100%);
+    -webkit-box-shadow: 0px 0px 1px #00CCFF, inset 0px 0px 5px #FFFFFF;
+    -moz-box-shadow: 0px 0px 1px #00CCFF, inset 0px 0px 5px #FFFFFF;
+    box-shadow: 0px 0px 1px #00CCFF, inset 0px 0px 5px #FFFFFF;
+    transition: border-radius 1s;
+    -webkit-transition: border-radius 1s;
+    -moz-transition: border-radius 1s;
+    -o-transition: border-radius 1s;
+    -ms-transition: border-radius 1s;
+    cursor: pointer;
+}
+
+
+/*Бутоните в натиснато състояние от JS*/
+
+button:focus,
+.pushed {
+    border-radius: 5px 50px 5px 50px;
+    -webkit-border-radius: 5px 50px 5px 50px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    -moz-border-radius-bottomright: 5px;
+    background: -moz-linear-gradient(top, pink 0%, #3498db 100%);
+    background: -webkit-linear-gradient(top, pink 0%, #3498db 100%);
+    background: -o-linear-gradient(top, pink 0%, #3498db 100%);
+    background: -ms-linear-gradient(top, pink 0%, #3498db 100%);
+    outline: none;
+}
+
+
+/*Преминаване с мишката върху бутоните*/
+
+button:hover {
+    border-radius: 5px 50px 5px 50px;
+    -webkit-border-radius: 5px 50px 5px 50px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 50px;
+    -moz-border-radius-bottomleft: 50px;
+    -moz-border-radius-bottomright: 5px;
+    background: -moz-linear-gradient(top, #3498db 0%, rgb(133, 194, 231) 100%);
+    background: -webkit-linear-gradient(top, #3498db 0%, rgb(133, 194, 231) 100%);
+    background: -o-linear-gradient(top, #3498db 0%, rgb(133, 194, 231) 100%);
+    background: -ms-linear-gradient(top, #3498db 0%, rgb(133, 194, 231) 100%);
+}
+
+
+/*Натиснат бутон*/
+
+button:active {
+    background-color: #1b7694;
+    background: -moz-linear-gradient(top, #1b7694 0%, #0d6380 100%);
+    background: -webkit-linear-gradient(top, #1b7694 0%, #0d6380 100%);
+    background: -o-linear-gradient(top, #1b7694 0%, #0d6380 100%);
+    background: -ms-linear-gradient(top, #1b7694 0%, #0d6380 100%);
+    background: linear-gradient(top, #1b7694 0%, #0d6380 100%);
+}
